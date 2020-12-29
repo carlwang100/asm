@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 apply plugin: 'com.learn.plugin'
 apply plugin: 'wc.learning.plugin'
-
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"

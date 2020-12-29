@@ -3,30 +3,19 @@ apply plugin: 'java-library'
 //use groovy library
 //apply plugin: 'groovy'
 apply plugin: 'maven'
-sourceSets {
-    main{
-//      groovy{
-//            srcDir 'src/main/groovy'
-//        }
-        java{
-            srcDir 'src/main/java'
-        }
-        resources {
-            srcDir 'src/main/resources'
-        }
-    }
-}
 
 dependencies{
     // gradle sdk
     implementation gradleApi()
     // groovy sdk
     implementation localGroovy()
+    implementation 'com.android.tools.build:gradle:3.1.4'
+    implementation 'com.android.tools.build:gradle-api:3.1.4'
 }
 
 
 group = 'wc.learning.plugin'
-version = '1.0.0'
+version = '1.0.4'
 
 //upload
 uploadArchives {
