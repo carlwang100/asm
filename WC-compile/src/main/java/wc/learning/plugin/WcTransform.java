@@ -88,12 +88,13 @@ public class WcTransform extends Transform {
 
     @Override
     public boolean isIncremental() {
-        return true;
+        return false;
     }
 
 
     private static void transformJar(File input, File dest) throws IOException {
         System.out.println("=== transformJar ===");
+        System.out.println("=== transform dir = " + input.getAbsolutePath() + ", " + dest.getAbsolutePath());
         FileUtils.copyFile(input, dest);
     }
 
@@ -123,6 +124,7 @@ public class WcTransform extends Transform {
     }
 
     private static void weave(String inputPath, String outputPath) {
+        System.out.println("=== weave = " + inputPath + ", " + outputPath);
         try {
             FileInputStream is = new FileInputStream(inputPath);
             ClassReader cr = new ClassReader(is);

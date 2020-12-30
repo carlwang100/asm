@@ -9,7 +9,7 @@ public class WcPlugin implements Plugin<Project> {
 
     @Override
     public void apply(Project project) {
-        System.out.println("i am 1.0.3---------");
+        System.out.println("i am 1.0.5---------");
         AppExtension android = project.getExtensions().getByType(AppExtension.class);
         android.registerTransform(new WcTransform(project));
     }

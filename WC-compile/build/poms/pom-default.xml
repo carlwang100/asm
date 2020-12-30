@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>wc.learning.plugin</groupId>
   <artifactId>WC-compile</artifactId>
-  <version>1.0.4</version>
+  <version>1.0.7</version>
   <dependencies>
     <dependency>
       <groupId>com.android.tools.build</groupId>
